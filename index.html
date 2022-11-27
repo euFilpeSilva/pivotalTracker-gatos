@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -51,7 +52,7 @@
             methods: {
                 async loadNextImage() {
                     try {
-                        axios.defaults.headers.common['x-api-key'] = "DEMO-API-KEY" // Replace this with your API Key
+                        axios.defaults.headers.common['x-api-key'] = "DEMO-API-KEY" 
 
                         let response = await axios.get('https://api.thecatapi.com/v1/images/search', { params: { limit: 1, size: "full" } }) // Ask for 1 Image, at full resolution
 

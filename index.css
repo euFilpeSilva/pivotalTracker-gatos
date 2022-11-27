@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height:50%;
+    justify-content:center;
+    align-items:center;
+}
+
+.d-flex {
+    margin-top: 30%;
+    background-color:red;
+}
